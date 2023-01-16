@@ -1,139 +1,145 @@
-
 /* about */
 #about {
     width: 100%;
     height: 100%;
-  }
+}
   
   
-  #about h1 {
-    margin-bottom: 2.5rem;
-  }
+/* #about h1 {
+  margin-bottom: 2.5rem;
+} */
   
-  .about__container {
-    display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
-    padding-bottom: 5rem;
-  }
+.about__container {
+  /* display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%; */
+ /* padding-bottom: 5rem; */
+  display: flex;
+}
   
-  .about__me {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(
-      45deg,
-      transparent,
-      var(--color-primary),
-      transparent
-    );
-    display: grid;
-    place-items: center;
-    width: 400px;
-    height: 500px;
-  }
+/* .about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+  width: 400px;
+  height: 500px;
+} */
   
-  .about__me-image {
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(5deg);
-    height: 698px;
-    transition: var(--transition);
-    width: 400px;
-    height: 500px;
-  }
+/* .about__me-image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(5deg);
+  height: 698px;
+  transition: var(--transition);
+  width: 400px;
+  height: 500px;
+} */
   
-  .about__me-image:hover {
-    transform: rotate(0deg);
-  }
+/* .about__me-image:hover {
+  transform: rotate(0deg);
+} */
   
-  .about__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
   
-  .about__card {
-    background: var(--color-background-variant);
-    border: 1px solid transparent;
-    border-radius: 1rem;
-    padding: 2rem;
-    text-align: center;
-    transition: var(--transition);
-  }
+.about__card {
+  background: var(--color-background-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
   
-  .about__card:hover {
-    background: var(--color-primary);
-    border-color: var(--color-primary-variant);
-    cursor: default;
-  }
+.about__card:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
   
-  .about__icon {
-    color: var(--color-primary-variant);
-    font-size: 1.5rem;
-    margin-bottom: 0.7rem;
-  }
+.about__icon {
+  color: var(--color-primary-variant);
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
   
-  .about__card h5 {
-    font-size: 1rem;
-  }
+.about__card h5 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
   
-  .about__card small {
-    font-size: 0.8rem;
-    color: var(--color-dark);
-  }
+.about__card small {
+  font-size: 0.7rem;
+  color: var(--color-dark);
+}
   
-  .about__content p {
+  /* .about__content p {
     margin: 2rem 0 2.6rem;
-  }
+  } */
+
+  /* .about__content a {
+    margin: 1rem auto;
+    display: flex;
+  } */
   
   /* me about*/
   
-  @media screen and (max-width:1024px) { 
-    .about__container {
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-    .about__me {
-      width: 100%;
-      height: auto;
-    }
-  
-    .about__me-image {
-      width: 100%;
-      height: 100%;
-    }
-    .about__cards {
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
+@media screen and (max-width:1024px) { 
+  .about__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
-  
-  @media screen and (max-width:600px) {
-  
-    .about__container {
-      grid-template-columns: 1fr;
-      gap: 0;
-    }
-  
-    .about__me {
-      width: 100%;
-      margin-bottom: 3rem;
-    }
-  
-    .about__cards {
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      /* margin: 0 4rem 4rem 0; */
-    }
-  
-    .about__content {
-      text-align: center;
-    }
-  
-    .about__content p {
-      width: 100%;
-    }
-  
+  .about__me {
+    width: 100%;
+    height: auto;
   }
+
+  .about__me-image {
+    width: 100%;
+    height: 100%;
+  }
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+  
+@media screen and (max-width:600px) {
+
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__me {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    /* margin: 0 4rem 4rem 0; */
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .about__content p {
+    width: 100%;
+  }
+
+}
   

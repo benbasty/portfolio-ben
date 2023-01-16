@@ -2,7 +2,7 @@ import './App.css';
 import Nav from './Nav';
 import Header from './Header';
 import About from './About';
-import Experience from './Experience';
+import Skills from './Skills';
 import Services from './Services';
 import Portfolio from './portfolio';
 import Contact from './contact';
@@ -14,7 +14,7 @@ function App() {
       <Nav/> 
       <Header/>
       <About />
-      <Experience />
+      <Skills />
       <Services />
       <Portfolio />
       <Contact />
