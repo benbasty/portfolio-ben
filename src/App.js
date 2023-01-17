@@ -3,6 +3,7 @@ import Nav from './Nav';
 import Header from './Header';
 import About from './About';
 import Skills from './Skills';
+import Qualifications from './Qualifications';
 import Services from './Services';
 import Portfolio from './portfolio';
 import Contact from './contact';
@@ -15,6 +16,7 @@ function App() {
       <Header/>
       <About />
       <Skills />
+      <Qualifications />
       <Services />
       <Portfolio />
       <Contact />
