@@ -1,56 +1,12 @@
-/* about */
 #about {
-    width: 100%;
-    height: 100%;
+  margin-top: 2rem;
 }
-  
-  
-/* #about h1 {
-  margin-bottom: 2.5rem;
-} */
-  
+
 .about__container {
-  /* display: grid;
-  grid-template-columns: 35% 50%;
-  gap: 15%; */
- /* padding-bottom: 5rem; */
-  display: flex;
-}
-  
-/* .about__me {
-  width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 2rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    var(--color-primary),
-    transparent
-  );
   display: grid;
-  place-items: center;
-  width: 400px;
-  height: 500px;
-} */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
   
-/* .about__me-image {
-  border-radius: 2rem;
-  overflow: hidden;
-  transform: rotate(5deg);
-  height: 698px;
-  transition: var(--transition);
-  width: 400px;
-  height: 500px;
-} */
-  
-/* .about__me-image:hover {
-  transform: rotate(0deg);
-} */
-  
-.about__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
 }
   
 .about__card {
@@ -112,6 +68,7 @@
   .about__cards {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    width: 100%;
   }
 }
   
