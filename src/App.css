@@ -120,6 +120,29 @@ img {
   object-fit: cover;
   display: block;
 }
+/* scrollbar */
+
+.hide-native-scrollbar::-webkit-scrollbar { /** WebKit */
+  display: none;
+}
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(207, 4%, 75%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(207, 4%, 65%);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(207, 4%, 55%);
+}
+::-webkit-scrollbar-track {
+  box-shadow: nset 0 0 6px grey;
+  border-radius: 5px;
+}
 
 /* General media queries */
 
