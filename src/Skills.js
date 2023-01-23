@@ -8,6 +8,7 @@ import Git from '../src/assets/git.png';
 import Java from '../src/assets/java.png';
 import Spring from '../src/assets/springlogofm.png';
 import MySQL from '../src/assets/mysql.png';
+import Bootstrap from '../src/assets/bootstrap.png';
 import '../src/Skills.css'; 
 
 function Experience() {
@@ -39,6 +40,13 @@ function Experience() {
                         <img src={JS} alt="javascript freepik"/>
                         <h4>JavaScript</h4>
                     </article>
+
+                    <article className="experience__details">
+                        <img src={Bootstrap} alt="javascript freepik"/>
+                        <h4>Bootstrap</h4>
+                    </article>
+
+                    
 
                     <article className="experience__details">
                         <img src={ReactIcon} alt="react srip"/>

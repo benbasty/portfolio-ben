@@ -37,9 +37,9 @@ body {
   line-height: 1.5;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .container {
   width: var(--container-width-large);
@@ -120,6 +120,7 @@ img {
   object-fit: cover;
   display: block;
 }
+
 /* scrollbar */
 
 .hide-native-scrollbar::-webkit-scrollbar { /** WebKit */
