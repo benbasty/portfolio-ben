@@ -5,7 +5,7 @@ import {MdWork} from 'react-icons/md';
 
 const Qualifications = () => {
   return (
-    <section>
+    <section id='qualifications'>
       <h1>Qualifications</h1>
       <h5>Education and Experience</h5>
       <div className='container qualifications__container'>

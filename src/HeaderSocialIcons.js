@@ -2,6 +2,7 @@ import React from "react";
 import {BsLinkedin} from 'react-icons/bs';
 import {BsYoutube} from 'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
+import '../src/HeaderSocialIcons.css'
 
 const HeaderSocialIcons = () => {
     return (

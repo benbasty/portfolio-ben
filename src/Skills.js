@@ -13,7 +13,7 @@ import '../src/Skills.css';
 
 function Experience() {
     return(
-        <section>
+        <section id="skills">
             
             <h5>What is my experience ?</h5>
             <h1>Skills</h1>

@@ -1,8 +1,9 @@
 import React from "react";
 import DownloadAndContact from "./DownloadAndContact";
-import ME from "../src/assets/mxe.png";
+import ME from "../src/assets/avatar.png";
 import HeaderSocialIcons from "./HeaderSocialIcons";
-// import About from './About';
+import About from './About';
+import ScrollDownLink from "./ScrollDownLink";
 import '../src/header.css';
 
 const Header = () => {
@@ -19,14 +20,22 @@ const Header = () => {
                     </div>
                     
                 </div>
-                <a href="#about" className="scroll__down">About Me</a>
-                <HeaderSocialIcons />
+                {/* <div className="scroll__down__container">
+                    <a href="#about" className="scroll__down">About Me</a>
+                </div>
+                
+                <HeaderSocialIcons /> */}
+                <div className="biography">
+                    <HeaderSocialIcons />
+                    <About />
+                    <ScrollDownLink />
+                </div>
                 
                 
             </div>
-            <div className="social-media-container">
+            {/* <div className="social-media-container">
                 <h1>HI</h1>
-            </div>
+            </div> */}
             
             
             

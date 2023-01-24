@@ -115,19 +115,30 @@
   display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 80px;
-	padding: 0 2rem;
+	height: 50px;
+	padding: 0 0 0 7rem;
 	color: var(--textColor);
+  position: sticky;
+  box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+  top: -5px;
+	z-index: 2;
+  background-color: #fff;
 }
 
 nav a {
 	margin: 0 1rem;
 	color: var(--color-dark);
 	text-decoration: none;
+  cursor: pointer;
 }
 
 nav a:hover {
 	color: var(--color-primary-variant);
+}
+
+nav a.active {
+  color: var(--color-primary);
+  font-weight: 500;
 }
 
 .navbar .nav-btn {
@@ -146,6 +157,7 @@ nav {
 	display: flex;
 	align-items: center;
 }
+
 nav .icon {
   margin-bottom: -0.15rem;
 }

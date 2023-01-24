@@ -1,11 +1,16 @@
 #about {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  position: absolute;
+  padding: 0 5rem;
+  bottom: 6rem;
+  width: 100%;
 }
 
 .about__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  width: 100%;
   
 }
   
