@@ -1,5 +1,4 @@
 import React from 'react';
-import './ScrollDownLink.css';
 import {BsArrowDownCircleFill} from 'react-icons/bs';
 
 const ScrollDownLink = () => {

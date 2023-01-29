@@ -20,11 +20,6 @@ const Header = () => {
                     </div>
                     
                 </div>
-                {/* <div className="scroll__down__container">
-                    <a href="#about" className="scroll__down">About Me</a>
-                </div>
-                
-                <HeaderSocialIcons /> */}
                 <div className="biography">
                     <HeaderSocialIcons />
                     <About />

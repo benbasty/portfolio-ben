@@ -26,23 +26,22 @@ const Nav = () => {
                 <Link activeClass="active" smooth spy to="projects"><BsImages className="icon"/> Projects</Link>
                 <Link activeClass="active" smooth spy to="blog"><BsPencilSquare className="icon"/> Blog</Link>
                 <Link activeClass="active" smooth spy to="contact"><BsChat className="icon"/> Contact</Link>
-                {/* <a href="#home"><AiFillHome className="icon"/> Home</a>
-                <a href="#skills"><AiFillTrophy className="icon"/> Skills</a>
-                <a href="#qualifications"><BiBookOpen className="icon"/> Qualifications</a>
-                <a href="#services"><BsBriefcase className="icon"/> Services</a>
-                <a href="#projects"><BsImages className="icon"/> Projects</a>
-                <a href="#blog"><BsPencilSquare className="icon"/> Blog</a>
-                <a href="#contact"><BsChat className="icon"/> Contact</a> */}
-                
                 <button
                     className="nav-btn nav-close-btn"
                     onClick={showNavbar}>
                     <FaTimes />
                 </button>
             </nav>
-            {/* <button className="theme-button">
+            {/* <a href="#home"><AiFillHome className="icon"/> Home</a>
+                <a href="#skills"><AiFillTrophy className="icon"/> Skills</a>
+                <a href="#qualifications"><BiBookOpen className="icon"/> Qualifications</a>
+                <a href="#services"><BsBriefcase className="icon"/> Services</a>
+                <a href="#projects"><BsImages className="icon"/> Projects</a>
+                <a href="#blog"><BsPencilSquare className="icon"/> Blog</a>
+                <a href="#contact"><BsChat className="icon"/> Contact</a> */}
+            <button className="theme-button">
                 <BsFillMoonFill />
-			</button> */}
+			</button>
             <button className="nav-btn" onClick={showNavbar}>
 				<FaBars />
 			</button>
