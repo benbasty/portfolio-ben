@@ -1,12 +1,10 @@
-import React from 'react';
-import {BsArrowDownCircleFill} from 'react-icons/bs';
+// import React from 'react';
 
-const ScrollDownLink = () => {
-  return (
-    <div className="scroll__down__container">
-        <a href="#about"><BsArrowDownCircleFill /></a>    
-    </div>
-  )
-}
 
-export default ScrollDownLink
+// const ScrollDownLink = () => {
+//   return (
+    
+//   )
+// }
+
+// export default ScrollDownLink

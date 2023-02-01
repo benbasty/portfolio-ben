@@ -1,19 +1,32 @@
-import React from "react";
-import { useRef } from "react";
+import React, { useEffect } from "react";
+import { useRef, useState } from "react";
 import {FaTimes, FaBars} from 'react-icons/fa';
 import {AiFillHome, AiFillTrophy} from 'react-icons/ai';
 import {BiBookOpen} from 'react-icons/bi';
-import {BsChat,BsPencilSquare, BsImages, BsBriefcase, BsFillMoonFill } from 'react-icons/bs';
+import {BsChat, BsImages, BsBriefcase, BsFillMoonFill } from 'react-icons/bs';
+// import {BsPencilSquare} from 'react-icons/bs';
 import '../src/nav.css';
 import {Link} from 'react-scroll';
 
 
 const Nav = () => {
     const navRef = useRef();
-
 	const showNavbar = () => {
 		navRef.current.classList.toggle("responsive_nav");
 	};
+
+
+    const [theme, setTheme] = useState("light-theme");
+    const lightDarkMode = () => {
+        if(theme === "dark-theme") {
+            setTheme("light-theme")
+        } else {
+            setTheme("dark-theme")
+        }
+    };
+    useEffect(() => {
+        document.body.className = theme
+    })
 
     return(
         <div className="navbar">
@@ -24,7 +37,7 @@ const Nav = () => {
                 <Link activeClass="active" smooth spy to="qualifications"><BiBookOpen className="icon"/> Qualifications</Link>
                 <Link activeClass="active" smooth spy to="services"><BsBriefcase className="icon"/> Services</Link>
                 <Link activeClass="active" smooth spy to="projects"><BsImages className="icon"/> Projects</Link>
-                <Link activeClass="active" smooth spy to="blog"><BsPencilSquare className="icon"/> Blog</Link>
+                {/* <Link activeClass="active" smooth spy to="blog"><BsPencilSquare className="icon"/> Blog</Link> */}
                 <Link activeClass="active" smooth spy to="contact"><BsChat className="icon"/> Contact</Link>
                 <button
                     className="nav-btn nav-close-btn"
@@ -39,10 +52,10 @@ const Nav = () => {
                 <a href="#projects"><BsImages className="icon"/> Projects</a>
                 <a href="#blog"><BsPencilSquare className="icon"/> Blog</a>
                 <a href="#contact"><BsChat className="icon"/> Contact</a> */}
-            <button className="theme-button">
-                <BsFillMoonFill />
+            <button className="theme-button" onClick={lightDarkMode}>
+                <BsFillMoonFill/>   
 			</button>
-            <button className="nav-btn" onClick={showNavbar}>
+            <button className="nav-btn" onClick={showNavbar} >
 				<FaBars />
 			</button>
         </div>

@@ -6,7 +6,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-top: 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 6rem; 
   }
   
   .experience__container > div {

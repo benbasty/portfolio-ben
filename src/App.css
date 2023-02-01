@@ -86,6 +86,7 @@ section > h1, section > h5 {
 a {
   color: var(--color-primary);
   transition: var(--transition);
+  cursor: pointer;
 }
 
 a:hover {
@@ -143,6 +144,180 @@ img {
 ::-webkit-scrollbar-track {
   box-shadow: nset 0 0 6px grey;
   border-radius: 5px;
+}
+
+/* dark mode and light mode */
+
+.light-theme {
+  background-color: var(--color-light);
+}
+
+.dark-theme {
+  background-color: var(--color-dark);
+  --font-color-primary: #f0f0f0;
+  --font-color-secondary:  #969696;
+  --sky-blue: #0092CC;
+  --storm-blue: #087099;
+  --hyper-red:#FF3333;
+  --sulphur-yellow: #DCD427;
+}
+
+/* dark theme changes */
+
+.dark-theme .navbar {
+	color: var(--font-color-primary);
+  background-color: var(--color-dark);
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(251, 248, 248, 0.11);
+}
+
+.dark-theme nav a {
+  color: var(--font-color-primary);
+}
+
+.dark-theme nav a:hover {
+  color: var(--sky-blue);
+}
+
+.dark-theme .theme-button {
+  border-radius: 50%;
+  background-color: var(--color-grey-ashy)
+}
+
+
+.dark-theme h1, h2, h3, h4, h5, h6 {
+  color: var(--font-color-primary);
+}
+
+.dark-theme .text-primary {
+  color: var(--sky-blue);
+}
+
+.dark-theme .btn {
+  color: var(--font-color-primary);
+}
+
+/* .dark-theme .btn-primary {
+  background: var();
+} */
+
+.dark-theme .me {
+  border: none;
+}
+
+.dark-theme .me .image {
+  background: linear-gradient(90deg, rgb(89, 88, 92) 5%, rgb(110, 110, 114) 26%, rgb(205, 213, 215) 100%);
+}
+
+.dark-theme .header__social__icons svg,
+.dark-theme .scroll__down__container svg
+ {
+  color: var(--sky-blue);
+}
+
+.dark-theme .header__social__icons svg:hover,
+.dark-theme .scroll__down__container svg:hover {
+  color: var(--font-color-primary);
+}
+
+.dark-theme .header__social__icons::after, 
+.dark-theme .scroll__down__container:after {
+  background: var(--font-color-secondary);
+}
+
+.dark-theme .about__card {
+  background: var(--storm-blue);
+}
+
+.dark-theme .about__card:hover {
+  background: var(--color-dark);
+  border-color: var(--font-color-secondary);
+}
+
+.dark-theme .about__icon {
+  color: var(--sulphur-yellow);
+}
+
+.dark-theme .about__card small {
+  color: var(--color-grey-ashy);
+}
+
+.dark-theme .experience__container > div,
+.dark-theme .qualification,
+.dark-theme .service {
+  background: var(--sky-blue);
+}
+.dark-theme .service__head {
+  background: var(--color-background-variant);
+}
+.dark-theme .contact__option-icon {
+  color: var(--storm-blue);
+}
+
+.dark-theme .contact__options article {
+  background-color: var(--sky-blue);
+}
+.dark-theme .contact__options article:hover {
+  background-color: transparent;
+}
+.dark-theme .contact__option h5 {
+  color: var(--color-grey-ashy);
+}
+
+.dark-theme .contact__option a {
+  color: var(--sulphur-yellow);
+}
+
+.dark-theme input, textarea {
+  color: var(--font-color-primary);
+}
+
+.dark-theme ::placeholder {
+  color: var(--font-color-secondary);
+}
+
+.dark-theme form button {
+  background-color: var(--storm-blue);
+  
+}
+
+.dark-theme form button:hover {
+  border-color: var(--font-color-secondary);
+}
+
+.dark-theme .permalinks {
+  display: none;
+}
+
+.dark-theme footer {
+  background-color: var(--color-dark);
+}
+
+.dark-theme .footer__socials a:nth-of-type(1) {
+  color: #0165E1;
+}
+.dark-theme .footer__socials a:nth-of-type(2) {
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.dark-theme .footer__socials a:nth-of-type(3) {
+  color: #00acee;
+}
+
+
+.dark-theme .footer__socials a:nth-of-type(2):hover,
+.dark-theme .footer__socials a:nth-of-type(3):hover {
+  opacity: 0.7;
+}
+
+.dark-theme .scrollup svg {
+  color: var(--font-color-primary);
+  transition: 0.5s;
+}
+
+.dark-theme .scrollup svg:hover {
+  color: var(--font-color-secondary);
 }
 
 /* General media queries */
