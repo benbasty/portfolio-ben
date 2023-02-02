@@ -23,11 +23,14 @@ header {
   height: 22rem; */
   width: 12rem;
   height: 12rem;
+  position: relative;
   /* width: 13%;
   height: 26%; */
-  position: absolute;
-  left: calc(50% - 6rem);
+  /* position: absolute; */
+  /* left: calc(50% - 6rem); */
   margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
   /* border-radius: 12rem 12rem 0 0; looks like opposite cup */
   border-radius: 12rem 12rem;
   overflow: hidden;
@@ -35,10 +38,12 @@ header {
 }
 
 .me .image {
+  display: flex;
   background: linear-gradient(90deg, rgb(202, 200, 225) 5%, rgb(217, 217, 239) 26%, rgb(222, 241, 245) 100%);
   position: absolute;
-  left: -2.5rem;
-  height: auto;
+  left: -2rem;
+  
+  
 } 
 /* .me:hover {
   border: none;
@@ -48,10 +53,9 @@ header {
 } */
 
 .biography {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
-  bottom: 0;
-  margin-bottom: 0;
+  padding: 2rem 0;
 }
 
 .header__social__icons {

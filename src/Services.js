@@ -64,42 +64,28 @@ function Services() {
                     <div className="service__list">
                         <li>
                             <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
+                            <p>Landing pages</p>
+                        </li>
+                        <li>
+                            <BiCheck className="service__list__icon" />
+                            <p>Web development support and maintenance & Web optimization</p>
+                        </li>
+                        <li>
+                            <BiCheck className="service__list__icon" />
+                            <p>Web programming
                             </p>
                         </li>
                         <li>
                             <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <p>Search Engine Optimisation</p>
                         </li>
                         <li>
                             <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <p>Domain Name, Web Hosting & Professional domain name email address</p>
                         </li>
                         <li>
                             <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
-                        </li>
-                        <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
+                            <p>Content Creation & Social Media Management
                             </p>
                         </li>
 
