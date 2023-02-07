@@ -2,8 +2,9 @@
 header {
     /* height: 94.84vh; */
     height: 100vh - 50px;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding-top: 1rem;
+    padding-bottom: 2rem;
 }
   
 .header__container {
@@ -148,15 +149,18 @@ header {
 
 
 /* media queries for header */
-@media screen and (max-width:1024px){
+/* @media screen and (max-width:1024px){
   header {
     height: 100vh;
   }
-}
+} */
 
 
 /* media queries for about component */
 @media screen and (max-width:1024px) { 
+  header {
+    height: 100%;
+  }
   .about__container {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -200,4 +204,36 @@ header {
     margin-bottom: 0.7rem;
   }
 
+}
+
+@media screen and (max-width:450px) {
+  .me {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .me {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media screen and (max-width:280px) {
+  .header__container h1 {
+    font-size: 2rem;
+  }
+  .me {
+    width: 8rem;
+    height: 8rem;
+  }
+  .downloadAndContact .btn {
+    font-size: 0.7rem;
+  }
+  .about__card:first-child small {
+    font-size:xx-small;
+  }
 }

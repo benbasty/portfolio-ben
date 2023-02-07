@@ -42,7 +42,7 @@
   .service__list li {
     width: 100%;
     display: grid;
-    grid-template-columns: 6% 93%;
+    grid-template-columns: 10% 90%;
     align-items: center;
     /* gap: 0.1rem; */
   }
@@ -61,6 +61,11 @@
   
   /* services media queries */
   /* large device */
+  @media screen and (max-width: 1200px){
+    .service__list li {
+      grid-template-columns: 15% 75%;
+    }
+  }
   @media screen and (max-width: 1024px){
     .services__container {
       grid-template-columns: 1fr 1fr;
@@ -68,6 +73,10 @@
     }
     .services {
       height: auto;
+    }
+    .service__list li {
+      grid-template-columns: 20% 80%;
+      
     }
   }
   

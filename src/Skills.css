@@ -81,5 +81,17 @@
       width: 100%;
       
     }
+    .experience__content {
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+    }
+    .portfolio__item {
+      width: 98%;
+    }
+    .btn {
+      padding: 0.8rem 1.2rem;
+      font-size: 0.5rem; 
+    }
+    
   }
   
