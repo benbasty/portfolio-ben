@@ -30,9 +30,9 @@ const Header = () => {
                 <div className="biography">
 
                     <div className="header__social__icons"> 
-                        <a href="https://www.linkedin.cn/incareer/in/ACoAABjKnVcBVmhZCkKpwHBoRfx-ntwgnouN1eM"><BsLinkedin /></a>
-                        <a href="https://github.com/benbasty"><BsGithub /></a>
-                        <a href="https://www.youtube.com/channel/UCnii87T9WU4TxSW-IZnMKmw"><BsYoutube /></a>
+                        <a href="https://www.linkedin.cn/incareer/in/ACoAABjKnVcBVmhZCkKpwHBoRfx-ntwgnouN1eM" target="_blank" rel="noreferrer"><BsLinkedin /></a>
+                        <a href="https://github.com/benbasty" target="_blank" rel="noreferrer"><BsGithub /></a>
+                        <a href="https://www.youtube.com/channel/UCnii87T9WU4TxSW-IZnMKmw" target="_blank" rel="noreferrer"><BsYoutube /></a>
                     </div>
 
                     <div id="about">

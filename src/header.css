@@ -1,8 +1,9 @@
 /* Header */
 header {
-    height: 94.84vh;
+    /* height: 94.84vh; */
+    height: 100vh - 50px;
     overflow: hidden;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
   
 .header__container {
@@ -15,7 +16,7 @@ header {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .me {
@@ -28,8 +29,8 @@ header {
   height: 26%; */
   /* position: absolute; */
   /* left: calc(50% - 6rem); */
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
   /* border-radius: 12rem 12rem 0 0; looks like opposite cup */
@@ -58,7 +59,7 @@ header {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .header__social__icons {
@@ -152,15 +153,7 @@ header {
     height: 100vh;
   }
 }
-@media screen and (max-width:600px){
-  header {
-    height: 100vh;
-  }
-  .header__social__icons,
-  .scroll__down {
-    display: none;
-  }
-}
+
 
 /* media queries for about component */
 @media screen and (max-width:1024px) { 
@@ -185,29 +178,26 @@ header {
 }
   
 @media screen and (max-width:600px) {
-
-  .about__container {
-    grid-template-columns: 1fr;
-    gap: 0;
+  .header__social__icons,
+  .scroll__down__container {
+    display: none;
   }
-
-  .about__me {
-    width: 100%;
-    margin-bottom: 3rem;
+  #about {
+    display: flex;
+    flex-direction: column;
   }
-
-  .about__cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    /* margin: 0 4rem 4rem 0; */
+  .about__card {
+    padding: 0.5rem;
   }
-
-  .about__content {
-    text-align: center;
+  .about__card h5 {
+    padding-bottom: 0.2rem;
+  } 
+  .about__icon {
+    margin-bottom: 0.2rem;
   }
-
-  .about__content p {
-    width: 100%;
+  .me {
+    margin-top: 1.6rem;
+    margin-bottom: 0.7rem;
   }
 
 }

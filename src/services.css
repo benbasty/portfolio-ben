@@ -77,4 +77,8 @@
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
+    .service__list li {
+      grid-template-columns: 10% 90%;
+      
+  }
   }

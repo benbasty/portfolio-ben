@@ -292,23 +292,8 @@ img {
   background-color: var(--color-dark);
 }
 
-.dark-theme .footer__socials a:nth-of-type(1) {
-  color: #0165E1;
-}
 .dark-theme .footer__socials a:nth-of-type(2) {
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-}
-.dark-theme .footer__socials a:nth-of-type(3) {
-  color: #00acee;
-}
-
-
-.dark-theme .footer__socials a:nth-of-type(2):hover,
-.dark-theme .footer__socials a:nth-of-type(3):hover {
-  opacity: 0.7;
+  color: #f0f2f5;
 }
 
 .dark-theme .scrollup svg {

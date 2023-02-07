@@ -12,7 +12,7 @@ import {Link} from 'react-scroll';
 const Nav = () => {
     const navRef = useRef();
 	const showNavbar = () => {
-		navRef.current.classList.toggle("responsive_nav");
+		navRef.current.classList.toggle("responsive_nav"); 
 	};
 
 
