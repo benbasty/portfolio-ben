@@ -82,3 +82,12 @@
       
   }
   }
+
+  @media screen and (max-width: 768px){
+    .service__list li {
+      grid-template-columns: 20% 80%;  
+    }
+    .service__list li .service__list__paragraph {
+      font-size: 0.6rem;
+    }
+  }

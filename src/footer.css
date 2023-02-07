@@ -78,3 +78,17 @@ footer {
         margin-bottom: 1rem;
     }
 }
+
+@media screen and (max-width: 500px){
+    footer {
+        padding: 1rem 1rem;
+    }
+    .permalinks {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .footer__socials {
+        margin-bottom: 1rem;
+    }
+}
