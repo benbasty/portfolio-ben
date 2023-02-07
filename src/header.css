@@ -1,8 +1,8 @@
 /* Header */
 header {
-    height: 97vh;
+    height: 94.84vh;
     overflow: hidden;
-    padding-top: 0.3rem;
+    padding-top: 2rem;
 }
   
 .header__container {
@@ -15,20 +15,21 @@ header {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .me {
   /* width: 22rem;
   height: 22rem; */
-  width: 12rem;
-  height: 12rem;
+  width: 16rem;
+  height: 16rem;
   position: relative;
   /* width: 13%;
   height: 26%; */
   /* position: absolute; */
   /* left: calc(50% - 6rem); */
-  margin-top: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   margin-left: auto;
   margin-right: auto;
   /* border-radius: 12rem 12rem 0 0; looks like opposite cup */
@@ -54,6 +55,8 @@ header {
 
 .biography {
   /* position: absolute; */
+  display: flex;
+  flex-direction: row;
   width: 100%;
   padding: 2rem 0;
 }
@@ -61,8 +64,8 @@ header {
 .header__social__icons {
   display: flex;
   gap: 0.4rem;
-  position: absolute;
-  bottom: 5rem;
+  /* position: absolute;
+  bottom: 5rem; */
   flex-direction: column;
   align-items: center;
   z-index: 10000;
@@ -81,7 +84,7 @@ header {
 
 /* about */
 #about {
-  padding: 4rem 5rem;
+  padding: 0 4rem;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -126,10 +129,10 @@ header {
 
 .scroll__down__container {
     display: flex;
-    gap: 0.4rem;
-    position: absolute;
+    gap: 1rem;
+    /* position: absolute;
     right: 0rem;
-    bottom: 5rem;
+    bottom: 5rem; */
     flex-direction: column;
     align-items: center;
     transition: 1s ease;
@@ -138,7 +141,7 @@ header {
 .scroll__down__container:after {
     content: "";
     width: 1px;
-    height: 2rem;
+    height: 6rem;
     background-color: var(--color-primary);
 }
 

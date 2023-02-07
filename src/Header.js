@@ -60,7 +60,7 @@ const Header = () => {
                     </div>
 
                     <div className="scroll__down__container">
-                        <a href="#about"><BsArrowDownCircleFill /></a>    
+                        <a href="#skills"><BsArrowDownCircleFill /></a>    
                     </div>
                 </div>   
             </div>

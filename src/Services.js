@@ -15,44 +15,45 @@ function Services() {
                     </div>
                     <div className="service__list">
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Mobile First and Responsive Design</p>
+                            </div>       
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>User Research and Analysis</p>     
+                            </div>
+                            
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Wireframe and Rapid Prototyping</p>
+                            </div>
+                            
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>User Testing</p>
+                            </div>
+                            
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Customer Experience Consulting</p>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Design Thinking</p> 
+                            </div>
+                            
                         </li>
 
                     </div>
@@ -63,82 +64,98 @@ function Services() {
                     </div>
                     <div className="service__list">
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Landing pages</p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Landing Pages</p>
+                            </div>       
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Web development support and maintenance & Web optimization</p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Web development support and maintenance & Web optimization</p>     
+                            </div>
+                            
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Web programming
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Web programming</p>
+                            </div>
+                            
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Search Engine Optimisation</p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Search Engine Optimisation</p>
+                            </div>
+                            
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Domain Name, Web Hosting & Professional domain name email address</p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Domain Name, Web Hosting & Professional domain name email address</p>
+                            </div>
+                            
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Content Creation & Social Media Management
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Content Creation & Social Media Management</p> 
+                            </div>
+                            
                         </li>
 
                     </div>
                 </article>
-                <article className="service">
+                {/* <article className="service">
                     <div className="service__head">
                         <h3>Content Design</h3>
                     </div>
                     <div className="service__list">
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Landing Pages</p>
+                            </div>       
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Web development support and maintenance & Web optimization</p>     
+                            </div>
+                            
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Web programming</p>
+                            </div>
+                            
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Search Engine Optimisation</p>
+                            </div>
+                            
                         </li>
                         <li>
-                            <BiCheck className="service__list__icon" />
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Domain Name, Web Hosting & Professional domain name email address</p>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div className="service__list__icon"><BiCheck /></div>
+                            <div className="service__list__paragraph">
+                                <p>Content Creation & Social Media Management</p> 
+                            </div>
+                            
                         </li>
 
                     </div>
-                </article>
+                </article> */}
 
             </div>
 
