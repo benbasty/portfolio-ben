@@ -9,6 +9,9 @@ import {BsYoutube} from 'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
 
 function Footer() {
+    const current = new Date();
+    // const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+    const year = `${current.getFullYear()}`;
     return(
         <footer>
             {/* <a href="#home" className="footer__logo">BEN</a> */}
@@ -28,7 +31,7 @@ function Footer() {
             </div>
 
             <div className="footer__copyright">
-                <small>&copy; Ben Basty. All Rights Reserved 2022</small>
+                <small>&copy; Ben. All Rights Reserved 2022 - {year}</small>
             </div>
         </footer>
     )
