@@ -295,6 +295,9 @@ img {
 .dark-theme .footer__socials a:nth-of-type(2) {
   color: #f0f2f5;
 }
+.dark-theme input, .dark-theme textarea {
+  border-color: var(--font-color-primary);
+}
 
 .dark-theme .scrollup svg {
   color: var(--font-color-primary);
