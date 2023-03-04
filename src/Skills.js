@@ -1,4 +1,4 @@
-import React from "react";
+import {React , useEffect } from 'react';
 // import {BsPatchCheckFill} from "react-icons/bs";
 import HTML from '../src/assets/html.png';
 import CSS from '../src/assets/css-3.png';
@@ -9,17 +9,26 @@ import Java from '../src/assets/java.png';
 import Spring from '../src/assets/springlogofm.png';
 import MySQL from '../src/assets/mysql.png';
 import Bootstrap from '../src/assets/bootstrap.png';
-import '../src/Skills.css'; 
+import '../src/Skills.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Experience() {
+
+    useEffect(() => {
+        Aos.init(
+          {duration: 1000}
+        );
+    }, []);
+
     return(
         <section id="skills">
-            
+
             <h5>What is my experience ?</h5>
             <h1>Skills</h1>
 
             <div className="container experience__container">
-                <div className="experience__frontend">
+                <div className="experience__frontend" data-aos='fade-left'>
                 <h3>Frontend Development</h3>
                 <div className="experience__content">
                     <article className="experience__details">
@@ -60,7 +69,7 @@ function Experience() {
                     
                 </div>
                 </div>
-                <div className="experience__backend">
+                <div className="experience__backend" data-aos='fade-right'>
                 <h3>Blackend Development</h3>
                 <div className="experience__content">
                     <article className="experience__details">
@@ -76,10 +85,9 @@ function Experience() {
                         <h4>MySQL</h4>
                     </article>
                 </div>
-                </div> 
+                </div>
             </div>
 
-                 
         </section>
     )
 }

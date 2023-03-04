@@ -1,23 +1,32 @@
-import React from 'react';
+import {React , useEffect } from 'react';
 import './Qualifications.css';
 import {GiDiploma} from 'react-icons/gi';
 import {MdWork} from 'react-icons/md';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Qualifications = () => {
+
+  useEffect(() => {
+    Aos.init(
+      {duration: 1000}
+    );
+  }, []);
+
   return (
     <section id='qualifications'>
       <h1>Qualifications</h1>
       <h5>Education and Experience</h5>
       <div className='container qualifications__container'>
-        <article className='qualification'>
+        <article className='qualification' data-aos='zoom-out-right'>
           <div className='qualification__type'>
             <GiDiploma className='qualification_type_icon'/>
             <h3>Education</h3>
           </div>
           <div className='qualification__lists'>
             <li>
-              <h4>Meta Front-End Developer Certificate</h4>
-              <p>Meta</p>
+              <h4>Meta Front-End Developer by Meta on Coursera</h4>
+              <p>Coursera</p>
               <p>2023</p>
             </li>
             <li>
@@ -47,7 +56,7 @@ const Qualifications = () => {
             </li>
           </div>
         </article>
-        <article className='qualification'>
+        <article className='qualification' data-aos='zoom-out-left'>
           <div className='qualification__type'>
             <MdWork className='qualification_type_icon'/>
             <h3>Work</h3>

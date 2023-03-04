@@ -9,11 +9,12 @@ import Contact from './contact';
 import Footer from './Footer';
 import ScrollUp from './ScrollUp';
 
+
 function App() {
-  return ( 
+  return (
       <>
-        <Nav/> 
-        <Header/>
+        <Nav />
+        <Header />
         <Skills />
         <Qualifications />
         <Services />
@@ -21,7 +22,7 @@ function App() {
         <Contact />
         <Footer />
         <ScrollUp />
-      </>    
+      </>
   );
 }
 

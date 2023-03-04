@@ -1,4 +1,4 @@
-import React from "react";
+import {React , useEffect } from 'react';
 import './portfolio.css';
 import IMG1 from '../src/assets/portfolio1.jpg';
 import IMG2 from '../src/assets/portfolio2.jpg';
@@ -6,6 +6,8 @@ import IMG3 from '../src/assets/portfolio3.jpg';
 import IMG4 from '../src/assets/portfolio4.jpg';
 import IMG5 from '../src/assets/portfolio5.png';
 import IMG6 from '../src/assets/portfolio6.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const data = [
     {
@@ -53,6 +55,13 @@ const data = [
 ]
 
 function Portfolio() {
+
+    useEffect(() => {
+        Aos.init(
+          {duration: 800}
+        );
+    }, []);
+
     return(
         <section id="projects">
             <h5>My Recent Projects</h5>
@@ -61,7 +70,7 @@ function Portfolio() {
                 {
                     data.map(({id,image,title,github,demo}) => {
                         return(
-                            <article key={id} className='portfolio__item'>
+                            <article key={id} className='portfolio__item' data-aos='zoom-out'>
                                 <div className="portfolio__item-image">
                                     <img src={image} alt={title}/>
                                 </div>

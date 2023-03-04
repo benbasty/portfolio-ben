@@ -18,11 +18,12 @@ const Nav = () => {
 
     const [theme, setTheme] = useState("light-theme");
     const lightDarkMode = () => {
-        if(theme === "dark-theme") {
-            setTheme("light-theme")
-        } else {
-            setTheme("dark-theme")
-        }
+        // if(theme === "dark-theme") {
+        //     setTheme("light-theme")
+        // } else {
+        //     setTheme("dark-theme")
+        // }
+        theme === "dark-theme" ? setTheme("light-theme") : setTheme("dark-theme");
     };
     useEffect(() => {
         document.body.className = theme
