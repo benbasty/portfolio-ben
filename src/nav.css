@@ -12,6 +12,14 @@
   	background-color: #fff;
 }
 
+.navbar .logo {
+	width: 8%;
+}
+
+.navbar .logo img {
+	width: 100%;
+}
+
 nav a {
 	margin: 0 1rem;
 	color: var(--color-dark);
@@ -109,7 +117,6 @@ nav .icon {
 		transform: none;
 	}
 
-	
 
 	nav a {
 		font-size: 1.5rem;

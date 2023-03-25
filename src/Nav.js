@@ -7,6 +7,7 @@ import {BsChat, BsImages, BsBriefcase, BsFillMoonFill } from 'react-icons/bs';
 // import {BsPencilSquare} from 'react-icons/bs';
 import '../src/nav.css';
 import {Link} from 'react-scroll';
+import Logo from '../src/assets/benbastylogo.png';
 
 
 const Nav = () => {
@@ -31,7 +32,7 @@ const Nav = () => {
 
     return(
         <div className="navbar">
-            <h3>BEN</h3>
+            <div className="logo"><img src={Logo} alt='logo'/></div>
             <nav ref={navRef}>
                 <Link activeClass="active" smooth spy to="home"><AiFillHome className="icon"/> Home</Link>
                 <Link activeClass="active" smooth spy to="skills"><AiFillTrophy className="icon"/> Skills</Link>
