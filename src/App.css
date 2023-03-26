@@ -84,13 +84,12 @@ section > h1, section > h5 {
 
 a {
   color: var(--color-primary);
-  transition: var(--transition);
+  transition: 1s;
   cursor: pointer;
 }
 
 a:hover {
   color: var(--color-dark);
-  font-size: 1rem;
 }
 
 .btn {
@@ -115,6 +114,29 @@ a:hover {
   color: var(--color-background);
 }
 
+#projectsContactButton a {
+  font-family: 'Source Sans Pro', sans-serif;
+  /* background: #5E5DF0; */
+  background: #111111;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  padding: 0.8rem 4.5rem;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+  letter-spacing: 1px;
+  display: inline-block;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: max-content;
+  transition: 1s;
+}
+#projectsContactButton a:hover {
+  background: #fafa71;
+  color: var(--color-dark);
+  border-color: transparent;
+}
 img {
   width: 100%;
   object-fit: cover;

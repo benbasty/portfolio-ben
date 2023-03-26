@@ -1,29 +1,21 @@
 import React, { useEffect } from "react";
 import { useRef, useState } from "react";
 import {FaTimes, FaBars} from 'react-icons/fa';
-import {AiFillHome, AiFillTrophy} from 'react-icons/ai';
+import {AiFillHome, AiFillTrophy, AiOutlineUser} from 'react-icons/ai';
 import {BiBookOpen} from 'react-icons/bi';
 import {BsChat, BsImages, BsBriefcase, BsFillMoonFill } from 'react-icons/bs';
-// import {BsPencilSquare} from 'react-icons/bs';
 import '../src/nav.css';
 import {Link} from 'react-scroll';
-import Logo from '../src/assets/benbastylogo.png';
+import ME from "../src/assets/avatar.png";
 
 
 const Nav = () => {
     const navRef = useRef();
 	const showNavbar = () => {
-		navRef.current.classList.toggle("responsive_nav"); 
+		navRef.current.classList.toggle("responsive_nav");
 	};
-
-
     const [theme, setTheme] = useState("light-theme");
     const lightDarkMode = () => {
-        // if(theme === "dark-theme") {
-        //     setTheme("light-theme")
-        // } else {
-        //     setTheme("dark-theme")
-        // }
         theme === "dark-theme" ? setTheme("light-theme") : setTheme("dark-theme");
     };
     useEffect(() => {
@@ -32,28 +24,28 @@ const Nav = () => {
 
     return(
         <div className="navbar">
-            <div className="logo"><img src={Logo} alt='logo'/></div>
+            <div className="logo">
+                <div className="benavatar">
+                    <img src={ME} alt=""/>
+                </div>
+                <div className="benlogo">
+                    <h4>BENBASTY</h4>
+                </div>
+            </div>
             <nav ref={navRef}>
-                <Link activeClass="active" smooth spy to="home"><AiFillHome className="icon"/> Home</Link>
-                <Link activeClass="active" smooth spy to="skills"><AiFillTrophy className="icon"/> Skills</Link>
-                <Link activeClass="active" smooth spy to="qualifications"><BiBookOpen className="icon"/> Qualifications</Link>
-                <Link activeClass="active" smooth spy to="services"><BsBriefcase className="icon"/> Services</Link>
-                <Link activeClass="active" smooth spy to="projects"><BsImages className="icon"/> Projects</Link>
-                {/* <Link activeClass="active" smooth spy to="blog"><BsPencilSquare className="icon"/> Blog</Link> */}
-                <Link activeClass="active" smooth spy to="contact"><BsChat className="icon"/> Contact</Link>
+                <Link activeClass="active" smooth spy to="home"><AiFillHome className="icon"/> <span className="textlink">Home</span></Link>
+                {/* <Link activeClass="active" smooth spy to="skills"><AiFillTrophy className="icon"/> Skills</Link>
+                <Link activeClass="active" smooth spy to="qualifications"><BiBookOpen className="icon"/> Qualifications</Link> */}
+                <Link activeClass="active" smooth spy to="aboutme"><AiOutlineUser className="icon"/> <span className="textlink">About</span></Link>
+                {/* <Link activeClass="active" smooth spy to="services"><BsBriefcase className="icon"/> Services</Link> */}
+                <Link activeClass="active" smooth spy to="projects"><BsImages className="icon"/> <span className="textlink">Projects</span></Link>
+                <Link activeClass="active" smooth spy to="contact"><BsChat className="icon"/> <span className="textlink">Contact</span></Link>
                 <button
                     className="nav-btn nav-close-btn"
                     onClick={showNavbar}>
                     <FaTimes />
                 </button>
             </nav>
-            {/* <a href="#home"><AiFillHome className="icon"/> Home</a>
-                <a href="#skills"><AiFillTrophy className="icon"/> Skills</a>
-                <a href="#qualifications"><BiBookOpen className="icon"/> Qualifications</a>
-                <a href="#services"><BsBriefcase className="icon"/> Services</a>
-                <a href="#projects"><BsImages className="icon"/> Projects</a>
-                <a href="#blog"><BsPencilSquare className="icon"/> Blog</a>
-                <a href="#contact"><BsChat className="icon"/> Contact</a> */}
             <button className="theme-button" onClick={lightDarkMode}>
                 <BsFillMoonFill/>   
 			</button>
@@ -61,7 +53,6 @@ const Nav = () => {
 				<FaBars />
 			</button>
         </div>
-        
     )
 }
 

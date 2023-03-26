@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    background: #fafafa;
+    height: 100vh;
+    font-family: 'Lora', serif;
+}
+
+.aboutme_header {
+    text-align: center;
+}
+.aboutme_header h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.aboutme_header .divider {
+    margin: 1rem auto;
+    border-bottom: 8px solid #f7e704;
+    width: 3%;
+    border-radius: 5px;
+}
+.aboutme_content {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.aboutme_content_description {
+    width: 50%;
+}
+
+.aboutme_content_description  p {
+    margin: 1rem 0;
+    color: #666;
+}
+
+.aboutme_content_description  p span {
+    font-weight: 700;
+    color: #333;
+}
+.aboutme_content_skills {
+    width: 50%;
+}
+.aboutme_content_description h2, .aboutme_content_skills h2 {
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
+
+.aboutme_content_skills .allSkills {
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.aboutme_content_skills .allSkills .singleSkill {
+    background-color: rgba(153,153,153,.2);
+    color: #666;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+}

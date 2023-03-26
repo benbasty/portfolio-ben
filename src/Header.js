@@ -19,23 +19,38 @@ const Header = () => {
 
     useEffect(() => {
         Aos.init(
-          {duration: 1000}
+          {duration: 500}
         );
     }, []);
 
     return(
         <header id="home">
-            <div className="container header__container">
-                <h5>Hi, I'm</h5>
-                <h1 data-aos="fade-down">Ben Basty</h1>
-                <h4 className="text-primary" data-aos="fade-down">Front-End Developer</h4>
-                <DownloadAndContact />
-                <div className="me" data-aos="zoom-in">
+            <div className="header__container">
+                <div className='header_intro_container'>
+                    <h1 data-aos="fade-down">Hi, I'm Ben Basty</h1>
+                    <p className="text-header" data-aos="fade-down">A FrontEnd Web Developer passionate about building beautiful front-end websites and web applications.</p>
+                    {/* <DownloadAndContact /> */}
+                    <div id="projectsContactButton">
+                        <a href="#projects" className="btn-black" data-aos="fade-left">Projects</a>
+                    </div>
+                </div>
+                <div className='header-home-socials'>
+                    <div className='header-home-social'>
+                        <a href="https://www.linkedin.cn/incareer/in/ACoAABjKnVcBVmhZCkKpwHBoRfx-ntwgnouN1eM" className='header-home-social-link' target="_blank" rel="noreferrer"><BsLinkedin /></a>
+                    </div>
+                    <div className='header-home-social'>
+                        <a href="https://github.com/benbasty" className='header-home-social-link' target="_blank" rel="noreferrer"><BsGithub /></a>
+                    </div>
+                    <div className='header-home-social'>
+                        <a href="https://www.youtube.com/channel/UCnii87T9WU4TxSW-IZnMKmw" className='header-home-social-link' target="_blank" rel="noreferrer"><BsYoutube /></a>
+                    </div>
+                </div>
+                {/* <div className="me" data-aos="zoom-in">
                     <div className="image">
                         <img src={ME} alt=""/>
                     </div>
-                </div>
-                <div className="biography">
+                </div> */}
+                {/* <div className="biography">
 
                     <div className="header__social__icons" data-aos="fade-right">
                         <a href="https://www.linkedin.cn/incareer/in/ACoAABjKnVcBVmhZCkKpwHBoRfx-ntwgnouN1eM" target="_blank" rel="noreferrer"><BsLinkedin /></a>
@@ -70,7 +85,7 @@ const Header = () => {
                     <div className="scroll__down__container" data-aos="fade-left">
                         <a href="#skills"><BsArrowDownCircleFill /></a>
                     </div>
-                </div>
+                </div> */}
             </div>
         </header>
     )

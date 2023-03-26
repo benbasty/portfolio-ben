@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+@font-face {
+	font-family: Blanka;
+	src: url("../src/assets/fonts/BLANKA Font/Blanka-Regular.otf");
+}
+
 .navbar {
   	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 50px;
-	padding: 0 0 0 7rem;
-	color: var(--textColor);
+	padding: 1rem 5rem;
   	position: sticky;
   	box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
   	top: -5px;
@@ -13,22 +18,56 @@
 }
 
 .navbar .logo {
-	width: 8%;
+	width: 10%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.3rem;
 }
-
-.navbar .logo img {
+.navbar .logo .benavatar {
+	width: 2rem;
+	height: 2rem;
+	position: relative;
+	border-radius: 12rem 12rem;
+	overflow: hidden;
+  	/* border: 0.3px solid var(--color-grey-ashy); */
+	background: linear-gradient(90deg, rgb(202, 200, 225) 5%, rgb(217, 217, 239) 26%, rgb(222, 241, 245) 100%);
+	margin-top: 1.5px;
+}
+.navbar .logo .benavatar img {
+  	position: absolute;
+	right: 1px;
+	top: 1px;
 	width: 100%;
 }
 
-nav a {
-	margin: 0 1rem;
-	color: var(--color-dark);
-	text-decoration: none;
- 	cursor: pointer;
+
+
+.navbar .logo .benlogo {
+	width: 50%;
 }
 
-nav a:hover {
-	color: var(--color-primary-variant);
+.navbar .logo .benlogo h4 {
+	font-size: 16px;
+	font-family: Blanka;
+}
+
+
+nav a {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	margin: 0 1rem;
+	color: #333;
+	text-decoration: none;
+ 	cursor: pointer;
+	text-transform: uppercase;
+}
+nav .textlink {
+	transition: .7s;
+}
+nav .textlink:hover {
+	color: #5E5DF0;
+	font-weight: 900;
 }
 
 nav a.active {
