@@ -1,6 +1,6 @@
 import React from "react";
 import '../src/About.css';
-
+import DownloadAndContact from "./DownloadAndContact";
 
 
 const About = () => {
@@ -19,13 +19,15 @@ const About = () => {
                         solving their problems. Check out some of my works in the
                         <span> Projects</span> section.
                     </p>
-                    <p>I'm quietly confident, naturally curious, and perpetually
+                    <p>I'm quietly confident, naturally curious, and consistenly
                         working on improving my <span>skills</span> each time i'm working on a new
                         poject.</p>
                     <p>I'm open to <span>Job</span> opportunities where I can contribute,
                          learn and grow. If you have a good opportunity that
                           matches my skills and experience then don't hesitate
-                           to <span>contact</span> me.</p>
+                           to <span>contact</span> me.
+                    </p>
+                    <DownloadAndContact />
                 </div>
                 <div className="aboutme_content_skills">
                     <h2>My Skills</h2>

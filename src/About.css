@@ -39,6 +39,26 @@
     font-weight: 700;
     color: #333;
 }
+
+.aboutme_content_description .downloadAndContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.aboutme_content_description .downloadAndContact a:first-child {
+    background-color: #000;
+    color: #fafafa;
+    border: transparent;
+}
+
+.aboutme_content_description .downloadAndContact a:nth-child(2) {
+    background-color: #3e8ed0;
+    color: #fafafa;
+    border: transparent;
+}
+
+
 .aboutme_content_skills {
     width: 50%;
 }

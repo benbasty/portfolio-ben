@@ -1,17 +1,8 @@
 import {React , useEffect } from 'react';
-import DownloadAndContact from "./DownloadAndContact";
-import ME from "../src/assets/avatar.png";
-// import HeaderSocialIcons from "./HeaderSocialIcons";
-// import About from './About';
-// import ScrollDownLink from "./ScrollDownLink";
 import '../src/header.css';
 import {BsLinkedin} from 'react-icons/bs';
 import {BsYoutube} from 'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
-import {FaAward} from 'react-icons/fa';
-import {FiUsers} from 'react-icons/fi';
-import {VscFolderLibrary} from 'react-icons/vsc';
-import {BsArrowDownCircleFill} from 'react-icons/bs';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -29,7 +20,6 @@ const Header = () => {
                 <div className='header_intro_container'>
                     <h1 data-aos="fade-down">Hi, I'm Ben Basty</h1>
                     <p className="text-header" data-aos="fade-down">A FrontEnd Web Developer passionate about building beautiful front-end websites and web applications.</p>
-                    {/* <DownloadAndContact /> */}
                     <div id="projectsContactButton">
                         <a href="#projects" className="btn-black" data-aos="fade-left">Projects</a>
                     </div>

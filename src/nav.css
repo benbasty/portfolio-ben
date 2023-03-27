@@ -72,11 +72,10 @@ nav .textlink:hover {
 
 nav a.active {
   color: var(--color-primary);
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .navbar .nav-btn {
-	
 	padding: 5px;
 	cursor: pointer;
 	background: transparent;
