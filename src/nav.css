@@ -47,6 +47,9 @@
 	width: 50%;
 }
 
+.navbar .logo .benlogo a {
+	color: #111;
+}
 .navbar .logo .benlogo h4 {
 	font-size: 16px;
 	font-family: Blanka;

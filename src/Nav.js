@@ -28,7 +28,7 @@ const Nav = () => {
                     <img src={ME} alt=""/>
                 </div>
                 <div className="benlogo">
-                    <h4>BENBASTY</h4>
+                    <a href="#benbasty"><h4>BENBASTY</h4></a>
                 </div>
             </div>
             <nav ref={navRef}>
