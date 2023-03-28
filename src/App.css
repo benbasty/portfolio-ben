@@ -169,6 +169,14 @@ img {
   border-radius: 5px;
 }
 
+/* divide */
+.divider {
+  margin: 0.8rem auto 2rem auto;
+  border-bottom: 8px solid #f7e704;
+  width: 3%;
+  border-radius: 5px;
+}
+
 /* dark mode and light mode */
 
 .light-theme {

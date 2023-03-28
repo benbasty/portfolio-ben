@@ -1,10 +1,15 @@
-footer {
-    background: var(--color-background-variant);
-    padding: 3rem 6rem;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+#footer {
+    background: #171515;
+    padding: 3rem 6rem 0.7rem 6rem;
+    /* text-align: center; */
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lora', serif;
+    color: #fafafa;
 }
-.permalinks {
+/* .permalinks {
     display: flex;
     justify-content:space-between;
     gap: 1rem;
@@ -23,26 +28,52 @@ footer {
 
 .permalinks a:hover {
     color: var(--color-dark);
+} */
+
+.footer_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_main  h4 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1.4rem;
+}
+
+.footer__me {
+    width: 85%;
+}
+
+.footer__me p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.footer__socials {
+    width: 15%;
 }
 
 .footer__socials {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+.footer__social {
+    display: flex;
+    flex-direction: row;
     gap: 1rem;
-    margin: 1rem 0;
+    padding-bottom: 4rem;
 }
 
-.footer__socials a {
-    /* background: var(--color-primary); */
-    color: var(--color-light);
+.footer__social a {
     border-radius: 0.8rem;
-    font-size: 2.3rem;
-    display: flex;
+    font-size: 1.5rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    color: #fff;
 }
 
-.footer__socials a:nth-of-type(1) {
+/* .footer__socials a:nth-of-type(1) {
     color: #00a0dc;
 }
 .footer__socials a:nth-of-type(2) {
@@ -50,7 +81,7 @@ footer {
 }
 .footer__socials a:nth-of-type(3) {
     color: #FF0000;
-}
+} */
 
 .footer__socials a:nth-of-type(1):hover, 
 .footer__socials a:nth-of-type(2):hover,
@@ -59,10 +90,19 @@ footer {
     opacity: 0.6;
 }
 
+.footer__copyright {
+    text-align: center;
+}
 
+.footer__copyright a {
+    text-decoration: underline;
+    color: #fafafa;
+    font-weight: 600;
+}
 
 .footer__copyright > small {
     color: var(--color-light);
+    font-size: 0.7rem;
 }
 
 @media screen and (max-width: 600px){

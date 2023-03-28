@@ -20,10 +20,11 @@ function Contact() {
       };
     return(
         <section id="contact">
-            <h5>Get in Touch</h5>
+            {/* <h5>Get in Touch</h5> */}
             <h1>Contact Me</h1>
+            <div className="divider"></div>
             <div className="container contact__container">
-                <div className="contact__options">
+                {/* <div className="contact__options">
                     <article className="contact__option">
                         <MdOutlineEmail className="contact__option-icon"/>
                         <h4>Email</h4>
@@ -42,13 +43,13 @@ function Contact() {
                         <h5>+861370000000000</h5>
                         <a href="https://api.whatsapp.com/send?phone+13728095491">Let's talk</a>
                     </article>
-                </div>
+                </div> */}
                 <form ref={form} onSubmit={sendEmail}>
-                    <input type="text" name="name" placeholder="Full Name" required/>
-                    <input type="email" name="email" placeholder="Email" required/>
-                    <input type="text" name="subject" placeholder="Subject" required/>
-                    <textarea name="message" rows='10' placeholder="Your Message" required></textarea>
-                    <button type="submit" className="btn btn-primary">Send Message</button>
+                    <input type="text" name="name" placeholder="Enter Your Name" required/>
+                    <input type="email" name="email" placeholder="Enter Your Email" required/>
+                    {/* <input type="text" name="subject" placeholder="Subject" required/> */}
+                    <textarea name="message" rows='10' placeholder="Enter Your Message" required></textarea>
+                    <button type="submit" className="btn btn-primary submit">Send Message</button>
                 </form>
             </div>
         </section>
