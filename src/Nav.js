@@ -43,7 +43,7 @@ const Nav = () => {
                 </button>
             </nav>
             <button className="theme-button" onClick={lightDarkMode}>
-                <BsFillMoonFill/>   
+                <BsFillMoonFill/>
 			</button>
             <button className="nav-btn" onClick={showNavbar} >
 				<FaBars />
