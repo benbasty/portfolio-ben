@@ -1,5 +1,5 @@
 import React from 'react';
-import {BsFillArrowUpSquareFill} from 'react-icons/bs';
+import {BsFillArrowUpCircleFill} from 'react-icons/bs';
 import './scrollUp.css';
 import { useEffect, useState } from 'react';
 
@@ -7,7 +7,7 @@ const ScrollUp = () => {
     const [backToTopButton, setBackToTopButton] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if(window.scrollY > 950) {
+            if(window.scrollY > 700) {
                 setBackToTopButton(true)
             } else {
                 setBackToTopButton(false)
@@ -23,7 +23,7 @@ const ScrollUp = () => {
   return (
     <div className='scrollup'>
         <div onClick={scrollUp}>
-            {backToTopButton && <BsFillArrowUpSquareFill />}
+            {backToTopButton && <BsFillArrowUpCircleFill />}
         </div>   
     </div>
   )

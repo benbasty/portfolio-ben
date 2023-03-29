@@ -1,7 +1,7 @@
 import {React , useEffect } from 'react';
 import './portfolio.css';
-import IMG1 from '../src/assets/portfolio1.jpg';
-import IMG2 from '../src/assets/portfolio2.jpg';
+import Dealbreaker from '../src/assets/dealbreaker.png';
+import Patatos from '../src/assets/patatos.png';
 import IMG3 from '../src/assets/portfolio3.jpg';
 // import IMG4 from '../src/assets/portfolio4.jpg';
 // import IMG5 from '../src/assets/portfolio5.png';
@@ -12,22 +12,22 @@ import 'aos/dist/aos.css';
 const data = [
     {
         id: 1,
-        image: IMG1,
-        title: 'ConnectME',
-        type: 'Social Media',
-        desc: 'ConnectME is a social media application that allows users to create an account, make posts, and interact with other users. It is built using the MERN stack (MongoDB, Express, React, Node.js) and is deployed on Heroku.',
-        tools: ["React", "Redux", "Tailwind", "Javascript", "NodeJS", "Express", "MongoDB", "GraphQL", "WebPack", "Oauth2", "Heroku"],
+        image: Dealbreaker,
+        title: 'Dealbreaker',
+        type: 'E-commerce',
+        desc: 'Dealbreaker is a ecommerce website that allows users to browse their favorite pics, add items to the cart, make orders, read blogs. It is built using the React frontend and is deployed on github pages.',
+        tools: ["HTML", "CSS", "Javascript", "React", "Redux", "Github Pages"],
         toolID: 11,
         github: 'https://github.com',
         livedemo: 'https://dribble.com'
     },
     {
         id: 2,
-        image: IMG2,
-        title: 'BookMe',
-        type: 'Scheduling App',
+        image: Patatos,
+        title: 'Patatos',
+        type: 'Recipe App',
         desc: 'BookMe is a web application that give users the platform they need to bring their business to the next level. The application is designed to give customers the ability to book appointments online and manage their appointments.',
-        tools: ["React", "Redux", "Tailwind", "Javascript", "DiasyUI", "NodeJS", "MongoDB", "Express", "SquareUp API", "Auth0", "Heroku"],
+        tools: ["HTML", "CSS", "Javascript", "React", "Redux", "Github Pages"],
         toolID: 22,
         github: 'https://github.com',
         livedemo: 'https://dribble.com'
