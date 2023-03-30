@@ -32,10 +32,10 @@ const Nav = () => {
                 </div>
             </div>
             <nav ref={navRef}>
-                <Link activeClass="active" smooth spy to="home"><AiFillHome className="icon"/> <span className="textlink">Home</span></Link>
-                <Link activeClass="active" smooth spy to="aboutme"><AiOutlineUser className="icon"/> <span className="textlink">About</span></Link>
-                <Link activeClass="active" smooth spy to="projects"><BsImages className="icon"/> <span className="textlink">Projects</span></Link>
-                <Link activeClass="active" smooth spy to="contact"><BsChat className="icon"/> <span className="textlink">Contact</span></Link>
+                <Link activeClass="active" spy to="home"><AiFillHome className="icon"/> <span className="textlink">Home</span></Link>
+                <Link activeClass="active" spy to="aboutme"><AiOutlineUser className="icon"/> <span className="textlink">About</span></Link>
+                <Link activeClass="active" spy to="projects"><BsImages className="icon"/> <span className="textlink">Projects</span></Link>
+                <Link activeClass="active" spy to="contact"><BsChat className="icon"/> <span className="textlink">Contact</span></Link>
                 <button
                     className="nav-btn nav-close-btn"
                     onClick={showNavbar}>
