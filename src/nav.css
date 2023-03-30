@@ -114,6 +114,24 @@ nav .icon {
 }
 
 /* navbar changes for all small devices */
+@media only screen and (max-width: 375px) {
+	.navbar .logo .benavatar {
+		display: none;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.navbar .logo .benavatar {
+		width: 1.8rem !important;
+		height: 1.8rem !important;
+		border-radius: 5rem !important;
+		margin-top: 1px !important;
+	}
+	.navbar .logo .benavatar img {
+		position: absolute !important;
+		left: -12px !important;
+		width: 250% !important;
+	}
+}
 @media only screen and (max-width: 600px) {
   .navbar {
     padding-left: 3rem;
@@ -160,15 +178,12 @@ nav .icon {
 	nav a {
 		font-size: 1.5rem;
 	}
-
-	.navbar .logo .benavatar {
-	}
 	.navbar .logo .benavatar img {
 		position: absolute;
 		right: 0;
-		left: -6px;
+		left: -12px;
 		top: 1px;
-		width: 150%;
+		width: 190%;
 	}
 }
 

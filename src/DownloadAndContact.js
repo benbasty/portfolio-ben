@@ -10,8 +10,8 @@ const DownloadAndContact = () => {
     }, []);
     return(
         <div className="downloadAndContact">
-            <a href={CV} download className="btn" data-aos="fade-right">Download CV</a>
-            <a href="#contact" className="btn btn-primary" data-aos="fade-left">Let's Chat</a>
+            <a href={CV} download className="btn">Download CV</a>
+            <a href="#contact" className="btn btn-primary">Let's Chat</a>
         </div>
     )
 }
