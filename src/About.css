@@ -3,7 +3,7 @@
 #aboutme {
     display: flex;
     flex-direction: column;
-    background: #fafafa;
+    background: #f2f2f2;
     height: 100vh;
     font-family: 'Lora', serif;
 }
@@ -82,4 +82,17 @@
     font-weight: 700;
     border-radius: 5px;
     padding: 1rem 2rem;
+}
+
+
+@media screen and (max-width:375px) {
+    #aboutme {
+      display: none;
+    }
+}
+
+@media screen and (max-width:280px) {
+    #aboutme {
+      display: none;
+    }
 }
