@@ -2,33 +2,12 @@
 #footer {
     background: #171515;
     padding: 3rem 6rem 0.7rem 6rem;
-    /* text-align: center; */
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     font-family: 'Lora', serif;
     color: #fafafa;
 }
-/* .permalinks {
-    display: flex;
-    justify-content:space-between;
-    gap: 1rem;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.permalinks a {
-    color: var(--color-light);
-    background: transparent;
-    transition: var(--transition);
-    font-size: 1rem;
-}
-
-.permalinks a:hover {
-    color: var(--color-dark);
-} */
 
 .footer_main {
     display: flex;
@@ -73,20 +52,7 @@
     color: #fff;
 }
 
-/* .footer__socials a:nth-of-type(1) {
-    color: #00a0dc;
-}
-.footer__socials a:nth-of-type(2) {
-    color: #171515
-}
-.footer__socials a:nth-of-type(3) {
-    color: #FF0000;
-} */
-
-.footer__socials a:nth-of-type(1):hover, 
-.footer__socials a:nth-of-type(2):hover,
-.footer__socials a:nth-of-type(3):hover
- {
+.footer__socials a:hover {
     opacity: 0.6;
 }
 
@@ -105,30 +71,55 @@
     font-size: 0.7rem;
 }
 
-@media screen and (max-width: 600px){
-    footer {
-        padding: 2rem 5rem;
+@media screen and (max-width: 600px) {
+    #footer {
+        padding: 3rem 2rem 0.7rem 2rem;
+        font-size: 0.5rem;
     }
-    .permalinks {
-        flex-direction: row;
-        justify-content: center;
-        gap: 1rem;
+    .footer_main {
+        gap: 2rem;
+        height: fit-content;
     }
+    .footer__me {
+        width: 70%;
+    }
+
     .footer__socials {
-        margin-bottom: 1rem;
+        width: 30%;
+    }
+    .footer__me p {
+        font-size: 0.6rem;
+    }
+    .footer__copyright > small {
+        font-size: 0.5rem;
     }
 }
 
-@media screen and (max-width: 500px){
-    footer {
-        padding: 1rem 1rem;
-    }
-    .permalinks {
+@media screen and (max-width: 414px) {
+    .footer_main {
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
     }
+    .footer__me {
+        width: 100%;
+    }
+
     .footer__socials {
-        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .footer__me p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 393px) {
+    .footer__me p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer__me p {
+        font-size: 1.1rem;
     }
 }

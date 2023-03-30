@@ -35,6 +35,7 @@ const About = () => {
                         <div className="allSkills">
                             <span className="singleSkill">HTML</span>
                             <span className="singleSkill">CSS</span>
+                            <span className="singleSkill">Javascript</span>
                             <span className="singleSkill">React</span>
                             <span className="singleSkill">SASS</span>
                             <span className="singleSkill">GIT</span>
