@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useRef, useState } from "react";
 import {FaTimes, FaBars} from 'react-icons/fa';
 import {AiFillHome, AiOutlineUser} from 'react-icons/ai';
-import {BsChat, BsImages, BsFillMoonFill } from 'react-icons/bs';
+import {BsChat, BsImages, BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import '../src/nav.css';
 import {Link} from 'react-scroll';
 import ME from "../src/assets/avatar.png";
@@ -16,10 +16,12 @@ const Nav = () => {
     const [theme, setTheme] = useState("light-theme");
     const lightDarkMode = () => {
         theme === "dark-theme" ? setTheme("light-theme") : setTheme("dark-theme");
+        setClick(!click);
     };
     useEffect(() => {
         document.body.className = theme
     })
+    const [click, setClick] = useState(false);
 
     return(
         <div className="navbar">
@@ -43,7 +45,11 @@ const Nav = () => {
                 </button>
             </nav>
             <button className="theme-button" onClick={lightDarkMode}>
-                <BsFillMoonFill/>
+                {click ?
+                (<BsFillSunFill />)
+                :
+                (<BsFillMoonFill/>)
+                }
 			</button>
             <button className="nav-btn" onClick={showNavbar} >
 				<FaBars />

@@ -200,7 +200,9 @@ img {
   background-color: var(--color-dark);
   box-shadow: 0 0.125rem 0.25rem 0 rgba(251, 248, 248, 0.11);
 }
-
+.dark-theme .nav-btn {
+  color: #f0f0f0;
+}
 .dark-theme nav a {
   color: var(--font-color-primary);
 }
@@ -209,9 +211,10 @@ img {
   color: var(--sky-blue);
 }
 
-.dark-theme .theme-button {
-  border-radius: 50%;
-  background-color: var(--color-grey-ashy)
+.dark-theme .theme-button{
+  /* border-radius: 50%;
+  background-color: var(--color-grey-ashy); */
+  color: var(--color-light);
 }
 
 

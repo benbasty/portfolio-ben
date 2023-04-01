@@ -104,7 +104,7 @@ nav .icon {
   position: fixed;
   right: 4.7rem;
   padding: 4px 5px;
-  background-color: #fff;
+  background-color: transparent;
   cursor: pointer;
   transition: 0.1s;
 }
