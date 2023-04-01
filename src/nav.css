@@ -66,14 +66,14 @@ nav a {
 	text-transform: uppercase;
 }
 nav a.active {
-	color: var(--color-primary);
+	color: #45a1eb;
 	font-weight: 800;
 }
 nav .textlink {
-	transition: .3s;
+	transition: .1s;
 }
 nav .textlink:hover {
-	color: #5E5DF0;
+	color: #3e8ed0;
 	font-weight: 900;
 }
 

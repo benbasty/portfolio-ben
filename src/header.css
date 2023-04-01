@@ -21,6 +21,8 @@ header .header_intro_container {
   margin-right: auto;
   margin-left: auto;
 }
+
+
 header .header_intro_container h1 {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
@@ -30,6 +32,10 @@ header .header_intro_container h1 {
   text-align: center;
   color: #111;
   margin: 1rem 0;
+}
+
+header .header_intro_container h1 span {
+  color: #7c8d95;
 }
 
 header .header_intro_container p {
