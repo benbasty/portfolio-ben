@@ -195,6 +195,7 @@ img {
 
 /* dark theme changes */
 
+
 .dark-theme .navbar {
 	color: var(--font-color-primary);
   background-color: var(--color-dark);
@@ -212,125 +213,62 @@ img {
 }
 
 .dark-theme .theme-button{
-  /* border-radius: 50%;
-  background-color: var(--color-grey-ashy); */
   color: var(--color-light);
 }
-
 
 .dark-theme h1, h2, h3, h4, h5, h6 {
   color: var(--font-color-primary);
 }
 
-.dark-theme .text-primary {
-  color: var(--sky-blue);
+
+/* dark bg all sections */
+.dark-theme #home,  .dark-theme #aboutme, .dark-theme #projects, .dark-theme #contact, .dark-theme #footer {
+  background-color: var(--color-dark);
 }
 
-.dark-theme .btn {
+
+/* home header dark mode css */
+.dark-theme header .header_intro_container h1, .dark-theme header .header_intro_container p{
   color: var(--font-color-primary);
 }
-
-/* .dark-theme .btn-primary {
-  background: var();
-} */
-
-.dark-theme .me {
-  border: none;
+.dark-theme header .header_intro_container h1 span {
+  color:#62bae3;
+}
+.dark-theme #projectsContactButton a {
+  background-color: #b32626;
+}
+.dark-theme #projectsContactButton a:hover {
+  background: #fafa71;
 }
 
-.dark-theme .me .image {
-  background: linear-gradient(90deg, rgb(89, 88, 92) 5%, rgb(110, 110, 114) 26%, rgb(205, 213, 215) 100%);
+/* about me dark mode css */
+
+.dark-theme .aboutme_content_description p, .dark-theme .aboutme_content_description  p span {
+  color: #ffffff;
+}
+.dark-theme .aboutme_content_description  p span {
+  color: rgb(211, 199, 35);
+}
+.dark-theme .aboutme_content_skills .allSkills .singleSkill {
+  color: #ffffff;
 }
 
-.dark-theme .header__social__icons svg,
-.dark-theme .scroll__down__container svg
- {
-  color: var(--sky-blue);
+/* portfolio */
+.dark-theme #projects h1 {
+  color: #ffffff;
+}
+.dark-theme .alt_portfolio_project_name h1, .dark-theme .alt_portfolio_project_tools h2 {
+  color: #000000;
 }
 
-.dark-theme .header__social__icons svg:hover,
-.dark-theme .scroll__down__container svg:hover {
-  color: var(--font-color-primary);
-}
 
-.dark-theme .header__social__icons::after, 
-.dark-theme .scroll__down__container:after {
-  background: var(--font-color-secondary);
-}
-
-.dark-theme .about__card {
-  background: var(--storm-blue);
-}
-
-.dark-theme .about__card:hover {
-  background: var(--color-dark);
-  border-color: var(--font-color-secondary);
-}
-
-.dark-theme .about__icon {
-  color: var(--sulphur-yellow);
-}
-
-.dark-theme .about__card small {
-  color: var(--color-grey-ashy);
-}
-
-.dark-theme .experience__container > div,
-.dark-theme .qualification,
-.dark-theme .service {
-  background: var(--sky-blue);
-}
-.dark-theme .service__head {
-  background: var(--color-background-variant);
-}
-.dark-theme .contact__option-icon {
-  color: var(--storm-blue);
-}
-
-.dark-theme .contact__options article {
-  background-color: var(--sky-blue);
-}
-.dark-theme .contact__options article:hover {
-  background-color: transparent;
-}
-.dark-theme .contact__option h5 {
-  color: var(--color-grey-ashy);
-}
-
-.dark-theme .contact__option a {
-  color: var(--sulphur-yellow);
-}
-
-.dark-theme input, textarea {
-  color: var(--font-color-primary);
-}
-
-.dark-theme ::placeholder {
-  color: var(--font-color-secondary);
-}
 
 .dark-theme form button {
   background-color: var(--storm-blue);
-  
 }
 
 .dark-theme form button:hover {
   border-color: var(--font-color-secondary);
-}
-
-.dark-theme .permalinks {
-  display: none;
-}
-
-.dark-theme footer {
-  background-color: var(--color-dark);
-}
-
-.dark-theme .footer__socials a:nth-of-type(2) {
-  color: #f0f2f5;
-}
-.dark-theme input, .dark-theme textarea {
-  border-color: var(--font-color-primary);
 }
 
 .dark-theme .scrollup svg {
@@ -341,6 +279,8 @@ img {
 .dark-theme .scrollup svg:hover {
   color: var(--font-color-secondary);
 }
+
+
 
 /* General media queries */
 
