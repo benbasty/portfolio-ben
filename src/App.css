@@ -219,11 +219,6 @@ img {
 .dark-theme h1, h2, h3, h4, h5, h6 {
   color: var(--font-color-primary);
 }
-
-/* dark theme responsive-nav */
-.dark-theme nav .textlink {
-  color: #fafafa;
-}
 @media screen  and (max-width: 600px){
   .dark-theme .navbar nav .nav-menu {
     background-color: #1d1d1d;
