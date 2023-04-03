@@ -220,10 +220,24 @@ img {
   color: var(--font-color-primary);
 }
 
+/* dark theme responsive-nav */
+.dark-theme nav .textlink {
+  color: #fafafa;
+}
+@media screen  and (max-width: 600px){
+  .dark-theme .navbar nav .nav-menu {
+    background-color: #1d1d1d;
+  }
+}
 
-/* dark bg all sections */
-.dark-theme #home,  .dark-theme #aboutme, .dark-theme #projects, .dark-theme #contact, .dark-theme #footer {
+
+
+/* dark bg all sections except footer*/
+.dark-theme #home, .dark-theme #projects {
   background-color: var(--color-dark);
+}
+.dark-theme #aboutme, .dark-theme #contact, .dark-theme .contact__container {
+  background-color:#131313;
 }
 
 
@@ -252,24 +266,33 @@ img {
 .dark-theme .aboutme_content_skills .allSkills .singleSkill {
   color: #ffffff;
 }
+.dark-theme .aboutme_content_description .downloadAndContact a:first-child {
+  background-color: #fafafa;
+  color: #000;
+}
+.dark-theme .aboutme_content_description .downloadAndContact a:nth-child(2) {
+  background-color: #f7e704;
+  color: #000;
+}
 
 /* portfolio */
-.dark-theme #projects h1 {
-  color: #ffffff;
-}
-.dark-theme .alt_portfolio_project_name h1, .dark-theme .alt_portfolio_project_tools h2 {
+.dark-theme .alt_portfolio_project_name, .dark-theme .alt_portfolio_project_tools h2 {
   color: #000000;
 }
 
-
+/* contact form */
 
 .dark-theme form button {
-  background-color: var(--storm-blue);
+  background-color: #f7e704;
 }
 
 .dark-theme form button:hover {
   border-color: var(--font-color-secondary);
 }
+
+/* footer */
+
+/* scroll up */
 
 .dark-theme .scrollup svg {
   color: var(--font-color-primary);
