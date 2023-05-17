@@ -2,7 +2,7 @@ import {React , useEffect } from 'react';
 import './portfolio.css';
 import Dealbreaker from '../src/assets/dealbreaker.png';
 import Patatos from '../src/assets/patatos.png';
-import IMG3 from '../src/assets/portfolio3.jpg';
+import WeatherAPP from '../src/assets/weatherapp.png';
 // import IMG4 from '../src/assets/portfolio4.jpg';
 // import IMG5 from '../src/assets/portfolio5.png';
 // import IMG6 from '../src/assets/portfolio6.jpg';
@@ -16,7 +16,7 @@ const data = [
         title: 'Dealbreaker',
         type: 'E-commerce Website',
         desc: 'Dealbreaker is a ecommerce website that allows users to browse their favorite pics, add items to the cart, make orders, read blogs. It is built using the React frontend and is deployed on github pages.',
-        tools: ["HTML", "CSS", "Javascript", "React", "Github Pages"],
+        tools: ["HTML", "CSS", "Javascript", "React"],
         toolID: 11,
         github: 'https://github.com',
         livedemo: 'https://dribble.com'
@@ -26,15 +26,15 @@ const data = [
         image: Patatos,
         title: 'Patatos',
         type: 'Restaurant App',
-        desc: 'Patatos is a website and a restaurant app that give users the possibility to browse the food menu and check what is availaible in the list of menus items. The application is designed to give customers the ability to book and reserve seats online and manage their bookings.',
-        tools: ["HTML", "CSS", "Javascript", "React", "Github Pages"],
+        desc: 'Patatos is a website and a restaurant app that give users the possibility to browse the food menu and all list of menus items specials. The application is designed to give customers the ability to book and reserve seats online.',
+        tools: ["HTML", "CSS", "Javascript", "React"],
         toolID: 22,
         github: 'https://github.com',
         livedemo: 'https://dribble.com'
     },
     {
         id: 3,
-        image: IMG3,
+        image: WeatherAPP,
         title: 'Weather App',
         type: 'Weather App',
         desc: 'This weather app displays real-time data for a given location. It uses two external APIs to fetch the weather data and has features such as search, auto-complete and location detection. This weather app is fully responsive.',
