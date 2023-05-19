@@ -18,8 +18,8 @@ const data = [
         desc: 'Dealbreaker is a ecommerce website that allows users to browse their favorite pics, add items to the cart, make orders, read blogs. It is built using the React frontend and is deployed on github pages.',
         tools: ["HTML", "CSS", "Javascript", "React"],
         toolID: 11,
-        github: 'https://github.com',
-        livedemo: 'https://dribble.com'
+        github: 'https://github.com/benbasty/ecommercereact',
+        livedemo: 'https://benbasty.github.io/ecommercereact/'
     },
     {
         id: 2,
@@ -40,8 +40,8 @@ const data = [
         desc: 'This weather app displays real-time data for a given location. It uses two external APIs to fetch the weather data and has features such as search, auto-complete and location detection. This weather app is fully responsive.',
         tools: ["HTML", "CSS", "React", "Javascript", "Rapid API GoeCities", "OpenWeatherMap API"],
         toolID: 33,
-        github: 'https://github.com',
-        livedemo: 'https://dribble.com'
+        github: 'https://github.com/benbasty/weatherapp',
+        livedemo: 'https://benbasty.github.io/weatherapp/'
     }
 ]
 
@@ -85,8 +85,8 @@ function Portfolio() {
                                         </div>
                                     </div>
                                     <div className='alt-portfolio-item-buttons'>
-                                        <a href={github} className="btn sourcecode">Source Code</a>
-                                        <a href={livedemo} className="btn btn-primary livedemo">Live demo</a>
+                                        <a href={github} className="btn sourcecode" target='_blank' rel="noreferrer">Source Code</a>
+                                        <a href={livedemo} className="btn btn-primary livedemo" target='_blank' rel="noreferrer">Live demo</a>
                                     </div>
                                 </div>
                             </article>
