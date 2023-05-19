@@ -32,7 +32,7 @@ const Nav = () => {
                     <img src={ME} alt=""/>
                 </div>
                 <div className="benlogo">
-                    <a href="#benbasty"><h4>BENBASTY</h4></a>
+                    <a href="#home"><h4>BENBASTY</h4></a>
                 </div>
             </div>
             <nav>
