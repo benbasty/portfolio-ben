@@ -5,6 +5,7 @@ import {AiFillHome, AiOutlineUser} from 'react-icons/ai';
 import {BsChat, BsImages, BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import '../src/nav.css';
 import {Link} from 'react-scroll';
+// import { Link as CNLink} from "react-router-dom";
 import ME from "../src/assets/avatar.png";
 
 const Nav = () => {
@@ -50,6 +51,10 @@ const Nav = () => {
                             <Link activeClass="active" spy to="contact" offset={-65}><BsChat className="icon"/> <span className="textlink" onClick={() => setShowNav(false)}>Contact</span></Link>
                         </li>
                     </ul>
+
+                {/* <div className="translate-cn">
+                    <CNLink to='/cn'>CN</CNLink>
+                </div> */}
 
                 <div className="theme-button" onClick={lightDarkMode}>
                     {click ?

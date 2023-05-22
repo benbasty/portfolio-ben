@@ -29,8 +29,8 @@ const data = [
         desc: 'Patatos is a website and a restaurant app that give users the possibility to browse the food menu and all list of menus items specials. The application is designed to give customers the ability to book and reserve seats online.',
         tools: ["HTML", "CSS", "Javascript", "React"],
         toolID: 22,
-        github: 'https://github.com',
-        livedemo: 'https://dribble.com'
+        github: 'https://github.com/benbasty/littlelemon',
+        livedemo: 'https://benbasty.github.io/littlelemon/'
     },
     {
         id: 3,
