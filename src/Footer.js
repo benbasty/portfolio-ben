@@ -24,7 +24,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer__copyright">
-                <small>&copy; Copyright {year}. Made by <a href="#benbasty">Ben Basty</a></small>
+                <small>&copy; Copyright {year}. Made by <a href="https://www.benbasty.com">Ben Basty</a></small>
             </div>
         </footer>
     )
